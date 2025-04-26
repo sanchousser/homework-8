@@ -1,5 +1,6 @@
 import { Component } from "react";
 import { Section } from "./Section/Section";
+import { FeedbackOption } from "./FeedbackOption/FeedbackOption";
 
 export class App extends Component {
 
@@ -13,7 +14,7 @@ export class App extends Component {
     this.setState((prevState) => ({
       [name]: prevState[name] + 1
     }))
-  }
+  };
 
   countTotalFeedback = () => {
     const { good, neutral, bad } = this.state
@@ -32,7 +33,7 @@ export class App extends Component {
     return (
       <>
         <Section title='Please leave Feedback'>
-          {/* <FeedbackOption />*/}
+          <FeedbackOption handleBtnFeedback={handleBtnFeedback}/>
         </Section>
         <Section title='Statistics'>
           {/* {this.countTotalfeedback() > 0 ? <Statistics />} : <Notification message='There is no feedback'/> */}

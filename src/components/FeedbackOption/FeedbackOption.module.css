@@ -1,0 +1,16 @@
+.feedback__option {
+    display: flex;
+    gap: 15px;
+}
+
+.feedback__btn {
+    padding: 5px 10px;
+    border: 1px solid #FFAC1C;
+    border-radius: 15px;
+    background-color: #FBCEB1;
+
+    &:hover {
+        background-color: #FF7F50;
+    }
+}
+
