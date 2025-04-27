@@ -3,11 +3,6 @@ import css from './FeedbackOption.module.css'
 
 export class FeedbackOption extends Component {
 
-    constructor(props) {
-
-        super(props);
-    }
-
     render() {
 
 
