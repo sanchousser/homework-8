@@ -1,19 +1,13 @@
 import { Component } from 'react'
 import css from './FeedbackOption.module.css'
 
-export class FeedbackOption extends Component {
-
-    render() {
-
-
-        const handleBtnFeedback = this.props.handleBtnFeedback
+export const FeedbackOption = ({onGood, onBad, onNeutral}) => {
 
 
         return (
             <div className={css.feedback__option}>
-                <button onClick={() => handleBtnFeedback('good')} className={css.feedback__btn}>good</button>
-                <button onClick={() => handleBtnFeedback('neutral')} className={css.feedback__btn}>neutral</button>
-                <button onClick={() => handleBtnFeedback('bad')} className={css.feedback__btn}>bad</button>
+                <button onClick={onGood} className={css.feedback__btn}>good</button>
+                <button onClick={onBad} className={css.feedback__btn}>neutral</button>
+                <button onClick={onNeutral} className={css.feedback__btn}>bad</button>
             </div>)
-    }
 }
