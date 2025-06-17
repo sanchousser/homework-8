@@ -1,4 +1,4 @@
-import { Component } from 'react'
+
 import css from './FeedbackOption.module.css'
 
 export const FeedbackOption = ({onGood, onBad, onNeutral}) => {
